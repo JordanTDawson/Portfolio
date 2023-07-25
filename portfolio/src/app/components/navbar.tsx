@@ -1,33 +1,18 @@
 import Link from "next/link";
+import navItems, { NavItem } from "../assets/images/data/navItems";
+import styles from './navbar.module.css'
+import React from "react";
 
-interface NavItem {
-    label: string;
-    page: string;
-}
-
-const navItems: NavItem[] = [
-    {
-        label: "Home",
-        page: "home",
-    },
-    {
-        label: "About",
-        page: "about",
-    },
-    {
-        label: "Projects",
-        page: "projects",
-    },
-];
-
-export default function NavBar() {
+const NavBar: React.FC = () => {
     return (
-        <header>
-            {navItems.map((item) => (
-                <Link href={`/${item.page}`} key={item.page}>
+        <header className="flex justify-center items-center">
+            {navItems.map((item: NavItem) => (
+                <Link className="hover:text-white text-2xl mx-3 pt-3 text-gray-500" href={`/${item.page}`} key={item.page}>
                     {item.label}
                 </Link>
             ))}
         </header>
     );
 }
+
+export default NavBar;
