@@ -5,12 +5,16 @@ export interface NavItem {
 
 const navItems: NavItem[] = [
     {
-        label: "Home",
-        page: "home",
+        label: "Intro",
+        page: "intro",
     },
     {
         label: "About",
-        page: "about",
+        page: "about"
+    },
+    {
+        label: "Skills",
+        page: "skills",
     },
     {
         label: "Projects",
