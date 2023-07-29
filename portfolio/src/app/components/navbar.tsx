@@ -1,5 +1,5 @@
-'use client';
 import Link from "next/link";
+import { useRouter } from 'next/router';
 import navItems, { NavItem } from "../assets/images/data/navItems";
 import React from "react";
 
