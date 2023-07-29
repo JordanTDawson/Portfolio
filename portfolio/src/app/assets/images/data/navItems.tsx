@@ -6,19 +6,19 @@ export interface NavItem {
 const navItems: NavItem[] = [
     {
         label: "Intro",
-        page: "intro",
+        page: "#",
     },
     {
         label: "About",
-        page: "about"
+        page: "#about"
     },
     {
         label: "Skills",
-        page: "skills",
+        page: "#skills",
     },
     {
         label: "Projects",
-        page: "projects",
+        page: "#projects",
     },
 ];
 
