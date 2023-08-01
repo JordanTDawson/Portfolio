@@ -40,7 +40,7 @@ const languages: Language[] = [
         alt: "PostgreSQL",
         homepage: "https://www.postgresql.org/",
         image: "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/postgresql/postgresql-plain.svg",
-        language: "PostgreSQL",
+        language: "Postgre",
     },
     {
         alt: "Tailwind",
@@ -77,12 +77,6 @@ const languages: Language[] = [
         homepage: "https://code.visualstudio.com/",
         image: "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vscode/vscode-original.svg",
         language: "VS Code",
-    },
-    {
-        alt: "Bootstrap",
-        homepage: "https://getbootstrap.com/",
-        image: "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/bootstrap/bootstrap-plain.svg",
-        language: "BootStrap",
     },
 ]
 

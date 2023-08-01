@@ -6,19 +6,19 @@ import Projects from "./projects/page";
 export default function Home() {
   
   return (
-    <div className="relative">
-      <div className="flex justify-center items-center h-screen">
+    <>
+      <div className="flex justify-center items-center min-h-screen">
         <Intro />
       </div>
-      <div className="flex justify-center items-center h-screen" id="skills">
+      <div className="flex justify-center items-center min-h-screen" id="skills">
         <Skills />
       </div>
-      <div className="flex justify-center items-center h-screen" id="projects">
+      <div className="flex justify-center items-center min-h-screen" id="projects">
         <Projects />
       </div>
-      <div className="flex justify-center items-center h-screen" id="qualifications">
+      <div className="flex justify-center items-center min-h-screen" id="qualifications">
         <Qualifications />
       </div>
-    </div>
+    </>
   );
 }
