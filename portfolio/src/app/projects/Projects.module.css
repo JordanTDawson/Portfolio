@@ -1,0 +1,7 @@
+.ProjectsImageWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    aspect-ratio: 70/45;
+    margin: 2rem auto;
+}
