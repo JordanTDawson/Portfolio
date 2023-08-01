@@ -9,16 +9,16 @@ const navItems: NavItem[] = [
         page: "#",
     },
     {
-        label: "About",
-        page: "#about"
-    },
-    {
         label: "Skills",
-        page: "#skills",
+        page: "#skills"
     },
     {
         label: "Projects",
         page: "#projects",
+    },
+    {
+        label: "Qualifications",
+        page: "#qualifications",
     },
 ];
 
