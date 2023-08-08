@@ -23,3 +23,5 @@ const projects: ProjectInfo[] = [
         repo: "https://github.com/JordanTDawson/dark-culture",
     }
 ]
+
+export default projects;
