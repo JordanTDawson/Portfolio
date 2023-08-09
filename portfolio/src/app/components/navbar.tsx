@@ -5,9 +5,9 @@ import React from "react";
 const NavBar: React.FC = () => {
 
   return (
-    <nav className="fixed flex justify-center items-center inset-x-0 z-50 h-16">
+    <nav className="fixed top-0 left-0 flex flex-col justify-center items-center h-screen p-4">
       {navItems.map((item: NavItem) => (
-        <Link className="hover:text-white text-2xl mx-3 pt-3 text-gray-500" 
+        <Link className="hover:text-white text-2xl my-3 text-gray-500" 
               href={`/${item.page}`} 
               key={item.page}
         >

@@ -6,19 +6,19 @@ import Projects from "./projects/page";
 export default function Home() {
   
   return (
-    <>
-      <div className="flex justify-center items-center min-h-screen">
+    <div className="snap-y snap-mandatory">
+      <section className="lg:snap-start flex justify-center items-center min-h-screen">
         <Intro />
-      </div>
-      <div className="flex justify-center items-center min-h-screen" id="skills">
+      </section>
+      <section className="lg:snap-start flex justify-center items-center min-h-screen" id="skills">
         <Skills />
-      </div>
-      <div className="flex justify-center items-center min-h-screen" id="projects">
+      </section>
+      <section className="lg:snap-start flex flex-col justify-center items-center min-h-screen" id="projects">
         <Projects />
-      </div>
-      <div className="flex justify-center items-center min-h-screen" id="qualifications">
+      </section>
+      <section className="lg:snap-start flex justify-center items-center min-h-screen" id="qualifications">
         <Qualifications />
-      </div>
-    </>
+      </section>
+    </div>
   );
 }
