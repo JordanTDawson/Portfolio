@@ -6,7 +6,7 @@ import Projects from "./projects/page";
 export default function Home() {
   
   return (
-    <div className="snap-y snap-mandatory">
+    <div className="snap-y snap-mandatory ml-[100px] p-4">
       <section className="lg:snap-start flex justify-center items-center min-h-screen">
         <Intro />
       </section>

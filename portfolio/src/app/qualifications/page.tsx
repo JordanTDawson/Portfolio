@@ -1,5 +1,5 @@
-export default function Qualifications() {
+export default function Credentials() {
     return (
-        <h1>Qualifications</h1>
+        <h1>Credentials</h1>
     )
 }

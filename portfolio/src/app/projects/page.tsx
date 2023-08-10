@@ -7,7 +7,7 @@ export default function Projects() {
     return (
         <>
             {projects.map((project: ProjectInfo) => (
-                <Link key={project.alt} href={project.page} rel="noreferer" target="_blank" 
+                <Link key={project.alt} href={project.page} rel="noreferrer" target="_blank" 
                       className="shadow-white rounded-3xl my-8 relative block w-[700px] h-[400px] max-w-[1000px]"
                 >
                     <div className="p-4 absolute inset-0 rounded-3xl overflow-hidden duration-300">
@@ -27,6 +27,30 @@ export default function Projects() {
                             <li className="mt-4">{project.bulletTwo}</li>
                             <li className="mt-4">{project.bulletThree}</li>
                         </ul>
+                        <div className="flex flex-wrap">
+                            <Link href={project.page} rel="noreferrer" target="_blank" className="mr-4 mb-4">
+                                <div className="w-[48px] h-[48px] transform hover:scale-110 transition-transform">
+                                    <Image
+                                        src="/link.png"
+                                        alt="Live Link"
+                                        width={48}
+                                        height={48}
+                                        priority
+                                    />
+                                </div>
+                            </Link>
+                            <Link href={project.repo} rel="noreferrer" target="_blank" className="mr-4 mb-4">
+                                <div className="w-[48px] h-[48px] transform hover:scale-110 transition-transform">
+                                    <Image
+                                        src="/github.png"
+                                        alt="Repository"
+                                        width={48}
+                                        height={48}
+                                        priority
+                                    />
+                                </div>
+                            </Link>
+                        </div>
                     </div>
                 </Link>
             ))}

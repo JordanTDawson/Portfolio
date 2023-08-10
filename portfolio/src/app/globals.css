@@ -21,6 +21,8 @@ html {
 }
 
 body {
+  overflow: hidden;
+  height: 100%;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -31,7 +33,11 @@ body {
 }
 
 section {
-  padding-bottom: 200px;
+  margin-bottom: 250px;
+}
+
+section:last-child {
+  margin-bottom: 0;
 }
 
 .shadow-white {
