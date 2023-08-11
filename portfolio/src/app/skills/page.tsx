@@ -11,7 +11,7 @@ export default function Skills() {
                 <Link className="hover:bg-gray-900 border border-white border-4 rounded-xl" href={`${skill.homepage}`} rel="noreferer" target="_blank" key={skill.language}>
                     <div className="flex flex-wrap justify-center md:p-4 text-center" >
                         <div className="relative w-[50px] h-[50px] md:w-[100px] md:h-[100px]" >
-                            <Image src={`${skill.image}`} alt={`${skill.alt}`} fill/>
+                            <Image src={`${skill.image}`} alt={`${skill.alt}`} fill sizes="100vh"/>
                         </div>
                         <h1 className="w-full">{skill.language}</h1>
                     </div>
