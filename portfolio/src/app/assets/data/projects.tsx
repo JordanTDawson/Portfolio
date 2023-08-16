@@ -24,7 +24,7 @@ const projects: ProjectInfo[] = [
     },
     {
         alt: 'Olive Garden Fanpage',
-        bulletOne: 'Created dynamic full-stack application with server-side rendering for its main pages using Next.js 13, Typescript, and Tailwind.',
+        bulletOne: 'Created dynamic full-stack application with server-side rendering for its main pages using Next.js, TypeScript, and Tailwind.',
         bulletTwo: 'Collaborated in all phases of project development, including discussions for technologies to use, features of the application, creating specs in Figma, and creating concise, modular, and syntactic code.',
         bulletThree: 'Significantly contributed to engineering a custom API with hand-crafted endpoints, enabling seamless data delivery and enhancing front-end functionality.',
         image: '/olive-garden-fanpage.jpg',
