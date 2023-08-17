@@ -4,8 +4,8 @@ export default function Credentials() {
     return (
         <div className='max-w-[80%] text-center'>
             <h1 className='text-4xl md:text-6xl mb-4'>Credentials</h1>
-            <a href='https://www.linkedin.com/in/jordantdawson/details/recommendations/' rel='noreferer' target='_blank' className='flex flex-wrap border border-white border-4 p-2 my-4 rounded-xl hover:text-yellow-500 transition-colors hover:scale-[102%] transform origin-center transition-transform'>
-                <div className='flex flex-col items-center'>
+            <a href='https://www.linkedin.com/in/jordantdawson/details/recommendations/' rel='noreferer' target='_blank' className='flex flex-wrap justify-center border border-white border-4 p-2 my-4 rounded-xl hover:text-yellow-500 transition-colors hover:scale-[102%] transform origin-center transition-transform'>
+                <div className='flex flex-col justify-center items-center'>
                     <div className='relative w-[100px] h-[100px] m-2'>
                         <Image
                         className='rounded-xl'

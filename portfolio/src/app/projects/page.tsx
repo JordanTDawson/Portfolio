@@ -5,9 +5,9 @@ export default function Projects() {
     return (
         <div className='max-w-[90%] text-center'>
         <h1 className='text-5xl md:text-6xl mb-4 md:mb-8'>Projects</h1>
-            <div className='w-[100%]'>
+            <div>
                 {projects.map((project: ProjectInfo) => (
-                    <div key={project.alt} className='group shadow-white rounded-3xl my-6 md:mb-8 relative block w-[100%] h-[30vh] md:w-[600px] md:h-[400px] max-w-[1000px] transform hover:scale-105 transition-transform'>
+                    <div key={project.alt} className='group shadow-white rounded-3xl my-6 md:mb-8 relative block w-[75vw] h-[30vh] 375:w-[75w] 375:h-[50vh] md:w-[600px] md:h-[400px] max-w-[1000px] transform hover:scale-105 transition-transform'>
                         <div className='h-full w-full p-4 absolute inset-0 rounded-3xl overflow-hidden duration-300'>
                             <Image
                                 src={project.image}
