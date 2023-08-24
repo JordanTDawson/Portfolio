@@ -7,6 +7,10 @@ export default function Intro() {
               a driven and enthusiastic software engineer who has recently completed a comprehensive coding bootcamp.
               I am thrilled to embark on this exciting journey of transforming my passion for technology into practical skills and real-world solutions.
           </p>
+          <div className='flex flex-wrap gap-8 justify-center my-4'>
+            <a href='https://www.linkedin.com/in/jordantdawson/' rel='noreferer' target='_blank' className='border-2 border-double border-white rounded-lg text-xl p-2 hover:text-yellow-500 hover:scale-105 transform transition-transform'>LinkedIn</a>
+            <a href='https://github.com/JordanTDawson' rel='noreferer' target='_blank' className='border-2 border-double border-white rounded-lg text-xl p-2 hover:text-yellow-500 hover:scale-105 transform transition-transform'>Github</a>
+          </div>
         </div>
     );
 }
