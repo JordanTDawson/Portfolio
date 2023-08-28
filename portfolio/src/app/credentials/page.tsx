@@ -29,18 +29,20 @@ export default function Credentials() {
                 </div>
             </a>
             <a href='https://learningfuze.com/' rel='noreferer' target='_blank' className='flex flex-wrap justify-center border border-white border-4 p-2 my-4 rounded-xl hover:text-yellow-500 transition-colors hover:scale-[102%] transform origin-center transition-transform'>
-                <div className='relative w-[100px] h-[100px] m-2'>
-                    <Image
-                        className='rounded-xl'
-                        src='https://blog.learningfuze.com/wp-content/uploads/2015/03/learning-fuze-20logo-202.png'
-                        alt='Learning Fuze'
-                        fill
-                        priority
-                    />
-                </div>
-                <div className='m-2 md:text-left'>
-                    <h1 className='text-xl md:text-5xl'>Learning Fuze</h1>
-                    <p className='text-gray-500'>Nov 2022 - March 2023</p>
+                <div className='flex flex-col justify-center items-center'>
+                    <div className='relative w-[100px] h-[100px] m-2'>
+                        <Image
+                            className='rounded-xl'
+                            src='https://blog.learningfuze.com/wp-content/uploads/2015/03/learning-fuze-20logo-202.png'
+                            alt='Learning Fuze'
+                            fill
+                            priority
+                        />
+                    </div>
+                    <div className='m-2 '>
+                        <h1 className='text-xl md:text-5xl'>Learning Fuze</h1>
+                        <p className='text-gray-500'>Nov 2022 - March 2023</p>
+                    </div>
                 </div>
                 <div className='text-left text-white'>
                     <ul className='ml-[1rem] md:mx-[2rem] text-sm list-disc'>
