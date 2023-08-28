@@ -14,7 +14,7 @@ export default function Skills() {
                             <Image src={`${skill.image}`} alt={`${skill.alt}`} fill sizes='100vh'/>
                         </div>
                         <div>
-                            <h2 className='text-xs md:w-full group-hover:text-yellow-500'>{skill.language}</h2>
+                            <h2 className='text-xs md:text-lg md:w-full group-hover:text-yellow-500'>{skill.language}</h2>
                         </div>
                     </div>
                 </Link>

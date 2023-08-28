@@ -1,14 +1,20 @@
 'use client'
 import Link from 'next/link';
 import navItems, { NavItem } from '../assets/data/navItems';
-import React, { useState } from 'react';
+import { useScrollContext } from '../contexts/ScrollContext';
+import { useEffect, useState } from 'react';
 
 const NavBar: React.FC = () => {
-  const [activeLink, setActiveLink] = useState<string | null>(null);
+  const { currentSection, setCurrentSection } = useScrollContext();
+  const [activeLink, setActiveLink] = useState('#');
 
   const handleLinkClick = (page: string) => {
-    setActiveLink(page);
+    setCurrentSection(page);
   };
+
+  useEffect(() => {
+    setActiveLink(`#${currentSection}`);
+  }, [currentSection])
 
   return (
     <nav className='fixed top-0 left-0 flex flex-col justify-center items-center h-screen p-4'>
