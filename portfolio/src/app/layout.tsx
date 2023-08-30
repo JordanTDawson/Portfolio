@@ -1,5 +1,6 @@
 import './globals.css'
 import NavBar from './components/navbar'
+import Head from 'next/head'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ScrollProvider } from './contexts/ScrollContext'
@@ -18,11 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <head>
+      <Head>
         <title>Jordan Dawson&apos;s Portfolio</title>
         <meta name='title' content='Jordan Dawson&apos; Portfolio'></meta>
         <meta name='description' content='Jordan Dawson&apos;s Portfolio'></meta>
-      </head>
+      </Head>
       <body id='#' className={inter.className}>
         <ScrollProvider>
           <nav className='hidden md:block'>
