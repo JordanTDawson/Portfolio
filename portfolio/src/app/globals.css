@@ -31,14 +31,6 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-section {
-  margin-bottom: 250px;
-}
-
-section:last-child {
-  margin-bottom: 0;
-}
-
 .shadow-white {
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
 }

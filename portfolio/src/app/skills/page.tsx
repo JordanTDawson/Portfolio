@@ -10,7 +10,7 @@ export default function Skills() {
             {languages.map((skill: Language) => (
                 <Link className='group hover:scale-105 transform transition-transform border border-white border-4 rounded-xl' href={`${skill.homepage}`} rel='noreferer' target='_blank' key={skill.language}>
                     <div className='flex flex-col justify-center items-center md:p-4 text-center' >
-                        <div className='relative w-[50px] h-[50px] md:w-[100px] md:h-[100px]' >
+                        <div className='relative w-[50px] h-[50px]' >
                             <Image src={`${skill.image}`} alt={`${skill.alt}`} fill sizes='100vh'/>
                         </div>
                         <div>

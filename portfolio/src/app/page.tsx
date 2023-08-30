@@ -4,6 +4,7 @@ import Credentials from './credentials/page';
 import Intro from './intro/page';
 import Skills from './skills/page';
 import Projects from './projects/page';
+import Testimonial from './testimonials/page';
 import { useScrollContext } from './contexts/ScrollContext';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
     intro: useRef(null),
     skills: useRef(null),
     projects: useRef(null),
+    testimonial: useRef(null),
     credentials: useRef(null),
   };
 
@@ -53,44 +55,17 @@ export default function Home() {
     <div className='md:ml-[150px] md:p-4'>
       <section className='relative flex flex-col justify-center items-center min-h-screen' ref={sectionRefs.intro}>
         <Intro />
-        <div className='block w-[100%] md:hidden flex justify-center 375:relative  bottom-0 left-0 right-0 p-4'>
-          <a className='border-2 border-white rounded-lg text-xl p-4 hover:text-yellow-500 hover:scale-105 transform transition-transform' href='#skills'>
-            Go to Skills
-          </a>
-        </div>
       </section>
       <section className='relative flex flex-col justify-center items-center min-h-screen' id='skills' ref={sectionRefs.skills}>
-      <div className='block w-[100%] md:hidden flex justify-center relative top-0 left-0 right-0 my-2'>
-          <a className='border-2 border-white rounded-lg text-xl p-4 hover:text-yellow-500 hover:scale-105 transform transition-transform' href='#'>
-            Go to Intro
-          </a>
-        </div>
         <Skills />
-        <div className='block w-[100%] md:hidden flex justify-center relative bottom-0 left-0 right-0 my-2'>
-          <a className='border-2 border-white rounded-lg text-xl p-4 hover:text-yellow-500 hover:scale-105 transform transition-transform' href='#projects'>
-            Go to Projects
-          </a>
-        </div>
       </section>
       <section className='relative flex flex-col justify-center items-center min-h-screen' id='projects' ref={sectionRefs.projects}>
-      <div className='block w-[100%] md:hidden flex justify-center relative top-0 left-0 right-0 p-2'>
-          <a className='border-2 border-white rounded-lg text-xl p-2 hover:text-yellow-500 hover:scale-105 transform transition-transform' href='#skills'>
-            Go to Skills
-          </a>
-        </div>
         <Projects />
-        <div className='block w-[100%] md:hidden flex justify-center relative bottom-0 left-0 right-0 p-2'>
-          <a className='border-2 border-white rounded-lg text-xl p-2 hover:text-yellow-500 hover:scale-105 transform transition-transform' href='#credentials'>
-            Go to Credentials
-          </a>
-        </div>
+      </section>
+      <section className='relative flex flex-col justify-center items-center min-h-screen' id='testimonial' ref={sectionRefs.testimonial}>
+        <Testimonial />
       </section>
       <section className='relative flex flex-col justify-center items-center min-h-screen' id='credentials' ref={sectionRefs.credentials}>
-        <div className='block w-[100%] md:hidden flex justify-center relative top-0 left-0 right-0 p-2'>
-          <a className='border-2 border-white rounded-lg text-xl p-2 hover:text-yellow-500 hover:scale-105 transform transition-transform' href='#projects'>
-            Go to Projects
-          </a>
-        </div>
         <Credentials />
         <div className='block w-[100%] md:hidden flex justify-center relative bottom-0 left-0 right-0 p-2'>
           <a className='border-2 border-white rounded-lg text-xl p-2 hover:text-yellow-500 hover:scale-105 transform transition-transform' href='#'>

@@ -17,6 +17,10 @@ const navItems: NavItem[] = [
         page: '#projects',
     },
     {
+        label: 'Testimonial',
+        page: '#testimonial',
+    },
+    {
         label: 'Credentials',
         page: '#credentials',
     },
