@@ -8,8 +8,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   openGraph: {
-    title: "Jordan Dawson's Portfolio",
-    description: "Jordan Dawson's Portfolio",
+    title: 'Jordan Dawson&apos;s Portfolio',
+    description: 'Jordan Dawson&apos;s Portfolio',
+    url: 'https://jordandawson.vercel.app/',
+    siteName: 'Jordan Dawson&apos;s Portfolio'
   }
 }
 
