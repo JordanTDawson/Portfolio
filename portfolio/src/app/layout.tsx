@@ -18,6 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
+      <head>
+        <title>Jordan Dawson&apos;s Portfolio</title>
+        <meta name='title' content='Jordan Dawson&apos; Portfolio'></meta>
+        <meta name='description' content='Jordan Dawson&apos;s Portfolio'></meta>
+      </head>
       <body id='#' className={inter.className}>
         <ScrollProvider>
           <nav className='hidden md:block'>
