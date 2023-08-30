@@ -1,6 +1,5 @@
 import './globals.css'
 import NavBar from './components/navbar'
-import Head from 'next/head'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ScrollProvider } from './contexts/ScrollContext'
@@ -8,8 +7,10 @@ import { ScrollProvider } from './contexts/ScrollContext'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Jordan Dawson's Portfolio",
-  description: "Jordan Dawson's Portfolio",
+  openGraph: {
+    title: "Jordan Dawson's Portfolio",
+    description: "Jordan Dawson's Portfolio",
+  }
 }
 
 export default function RootLayout({
@@ -19,11 +20,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <Head>
-        <title>Jordan Dawson&apos;s Portfolio</title>
-        <meta name='title' content='Jordan Dawson&apos; Portfolio'></meta>
-        <meta name='description' content='Jordan Dawson&apos;s Portfolio'></meta>
-      </Head>
       <body id='#' className={inter.className}>
         <ScrollProvider>
           <nav className='hidden md:block'>
