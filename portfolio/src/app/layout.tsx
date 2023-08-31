@@ -1,5 +1,5 @@
 import './globals.css'
-import NavBar from './components/navbar'
+import NavBar from './components/Navbar'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ScrollProvider } from './contexts/ScrollContext'
@@ -7,11 +7,12 @@ import { ScrollProvider } from './contexts/ScrollContext'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://jordandawson.vercel.app/'),
   openGraph: {
-    title: 'Jordan Dawson&apos;s Portfolio',
-    description: 'Jordan Dawson&apos;s Portfolio',
+    title: "Jordan Dawson's Portfolio",
+    description: "Jordan Dawson's Portfolio",
     url: 'https://jordandawson.vercel.app/',
-    siteName: 'Jordan Dawson&apos;s Portfolio'
+    siteName: "Jordan Dawson's Portfolio"
   }
 }
 

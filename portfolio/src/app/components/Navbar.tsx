@@ -5,6 +5,7 @@ import { useScrollContext } from '../contexts/ScrollContext';
 import { useEffect, useState } from 'react';
 
 const NavBar: React.FC = () => {
+
   const { currentSection, setCurrentSection } = useScrollContext();
   const [activeLink, setActiveLink] = useState('#');
 
@@ -17,7 +18,7 @@ const NavBar: React.FC = () => {
   }, [currentSection])
 
   return (
-    <nav className='fixed top-0 left-0 flex flex-col justify-center items-center h-screen p-4'>
+    <nav className='fixed top-0 left-0 flex flex-col justify-center items-center h-screen p-2'>
       {navItems.map((item: NavItem) => (
         <Link
           className={`hover:text-white text-2xl my-3 ${

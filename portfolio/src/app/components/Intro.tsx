@@ -4,13 +4,14 @@ export default function Intro() {
     return (
         <div className='flex flex-col max-w-[100%] md:max-w-[80%] lg:max-w-[60%] text-center items-center'>
           <p className='text-gray-500'>Hi! My name is</p>
-          <div className='relative w-[200px] h-[200px] 375:w-[125px] 375:h-[125px] md:w-[400px] md:h-[400px] m-2 overflow-hidden rounded-full'>
+          <div className='relative w-[200px] h-[200px] landscape-sm:w-[125px] landscape-sm:h-[125px] md:w-[400px] md:h-[400px] m-2 rounded-full'>
               <Image
-              className='object-cover w-[100%] h-[100%]'
               src='/jordan-dawson.jpg'
               alt='A picture of me!'
-              fill
-              priority
+              fill={true}
+              priority={true}
+              sizes='(max-width: 768px) 125px, 400px'
+              className='object-cover rounded-full'
               />
           </div>
           <h1 className='text-5xl md:text-8xl'>Jordan Dawson</h1>

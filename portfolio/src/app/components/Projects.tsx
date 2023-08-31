@@ -12,9 +12,8 @@ export default function Projects() {
                             <Image
                                 src={project.image}
                                 alt={project.alt}
-                                fill
+                                fill={true}
                                 sizes='100vw'
-                                priority
                             />
                         </div>
                         <div className='rounded-3xl absolute inset-0 flex flex-col justify-center items-center pt-4 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition duration-300'>
@@ -27,22 +26,22 @@ export default function Projects() {
                             </ul>
                             <div className='flex flex-wrap justify-center p-4'>
                                 <a href={project.page} rel='noreferrer' target="_blank" className='mx-2'>
-                                    <div className='w-[35px] h-[35px] md:w-[48px] md:h-[48px] transform hover:scale-110 transition-transform'>
+                                    <div className='relative w-[35px] h-[35px] md:w-[48px] md:h-[48px] transform hover:scale-110 transition-transform'>
                                         <Image
                                             src='/link.png'
                                             alt='Live Link'
-                                            fill
-                                            priority
+                                            fill={true}
+                                            sizes='(min-width: 768px) 35px, 48px'
                                         />
                                     </div>
                                 </a>
                                 <a href={project.repo} rel='noreferrer' target="_blank" className='mx-2'>
-                                    <div className='w-[35px] h-[35px] md:w-[48px] md:h-[48px] transform hover:scale-110 transition-transform'>
+                                    <div className='relative w-[35px] h-[35px] md:w-[48px] md:h-[48px] transform hover:scale-110 transition-transform'>
                                         <Image
                                             src='/github.png'
                                             alt='Repository'
-                                            fill
-                                            priority
+                                            fill={true}
+                                            sizes='(min-width: 768px) 35px, 48px'
                                         />
                                     </div>
                                 </a>

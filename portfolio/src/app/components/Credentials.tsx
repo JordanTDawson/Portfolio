@@ -11,8 +11,8 @@ export default function Credentials() {
                             className='rounded-xl'
                             src='https://blog.learningfuze.com/wp-content/uploads/2015/03/learning-fuze-20logo-202.png'
                             alt='Learning Fuze'
-                            fill
-                            priority
+                            fill={true}
+                            sizes='100px'
                         />
                     </div>
                     <div className='m-2 '>

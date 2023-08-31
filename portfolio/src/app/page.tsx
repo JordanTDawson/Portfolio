@@ -1,10 +1,10 @@
 'use client';
 import React, { useEffect, useRef } from 'react';
-import Credentials from './credentials/page';
-import Intro from './intro/page';
-import Skills from './skills/page';
-import Projects from './projects/page';
-import Testimonial from './testimonials/page';
+import Credentials from './components/Credentials';
+import Intro from './components/Intro';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Testimonial from './components/Testimonial';
 import { useScrollContext } from './contexts/ScrollContext';
 
 export default function Home() {
