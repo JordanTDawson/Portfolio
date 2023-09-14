@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Intro() {
     return (
         <div className='flex flex-col max-w-[100%] md:max-w-[80%] lg:max-w-[60%] text-center items-center'>
-          <p className='text-gray-500'>Hi! My name is</p>
+          <p className='text-2xl'>Hi! My name is</p>
           <div className='relative w-[200px] h-[200px] landscape-sm:w-[125px] landscape-sm:h-[125px] md:w-[400px] md:h-[400px] m-2 rounded-full'>
               <Image
               src='/jordan-dawson.jpg'

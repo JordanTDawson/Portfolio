@@ -4,7 +4,7 @@ import Credentials from './components/Credentials';
 import Intro from './components/Intro';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import Testimonial from './components/Testimonial';
+import Testimonials from './components/Testimonials';
 import { useScrollContext } from './contexts/ScrollContext';
 
 export default function Home() {
@@ -62,8 +62,8 @@ export default function Home() {
       <section className='relative flex flex-col justify-center items-center min-h-screen' id='projects' ref={sectionRefs.projects}>
         <Projects />
       </section>
-      <section className='relative flex flex-col justify-center items-center min-h-screen' id='testimonial' ref={sectionRefs.testimonial}>
-        <Testimonial />
+      <section className='relative flex flex-col justify-center items-center min-h-screen' id='testimonials' ref={sectionRefs.testimonial}>
+        <Testimonials />
       </section>
       <section className='relative flex flex-col justify-center items-center min-h-screen' id='credentials' ref={sectionRefs.credentials}>
         <Credentials />
